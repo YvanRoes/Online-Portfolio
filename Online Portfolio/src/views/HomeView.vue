@@ -4,18 +4,16 @@
 
 <template>
   <div class="py-20 bg-gradient-to-r from-indigo-600 to-purple-900">
-    <div class="container mx-auto px-6 text-center">
+    <div id="contact-me" class="container mx-auto px-6 text-center">
       <h2 class="text-4xl font-bold text-white mb-4">
-        Looking to build your app or website?
+        In need to build your app or website?
       </h2>
       <h3 class="text-2xl text-gray-200 mb-8">
         Reach your audience from anywhere
       </h3>
-
-      <button
-        class="bg-white text-indigo-600 font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider hover:bg-indigo-600 hover:text-white">
-        Contact Us
-      </button>
+      <router-link to="/contact"
+        class="bg-white text-indigo-600 font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider hover:bg-indigo-600 hover:text-white">Contact
+        me</router-link>
     </div>
   </div>
 
@@ -97,9 +95,11 @@
       <h3 class="my-4 text-2xl text-white">
         Elevate your online presence with our professional web development solutions!
       </h3>
-      <button class="bg-white font-bold rounded-full mt-6 py-4 px-8 shadow-lg uppercase tracking-wider">
+      <!-- <button class="bg-white font-bold rounded-full mt-6 py-4 px-8 shadow-lg uppercase tracking-wider">
         Get Started
-      </button>
+      </button> -->
+      <a href="#contact-me" class="bg-white font-bold rounded-full mt-6 py-4 px-8 shadow-lg uppercase tracking-wider"> Get
+        Started</a>
     </div>
   </section>
 </template>
