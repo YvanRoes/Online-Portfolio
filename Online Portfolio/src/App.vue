@@ -2,11 +2,13 @@
 import { RouterLink, RouterView } from 'vue-router'
 
 import Navigation from './components/Navigation.vue'
+import FooterBar from './components/Footer.vue'
 
 export default {
   name: "App",
   components: {
-    Navigation
+    Navigation,
+    FooterBar
   }
 };
 </script>
@@ -14,8 +16,8 @@ export default {
 <template>
   <header>
     <Navigation></Navigation>
-
-  </header>
+  </header>  
   <RouterView />
+  <FooterBar></FooterBar>
 </template>
 <style ></style>
